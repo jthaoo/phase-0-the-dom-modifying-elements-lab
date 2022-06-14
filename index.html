@@ -1,12 +1,6 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>Creating and Inserting DOM Elements</title>
-  </head>
-  <script type="application/javascript">
-  </script>
-  <body>
-    <main id="main"></main>
-    <script type="text/javascript" src="index.js"></script>
-  </body>
-</html>
+const mainNode = document.getElementById('main');
+mainNode.remove();
+
+const newHeader = document.createElement('h1');
+newHeader.setAttribute('id', 'victory');
+newHeader.innerHTML = 'Abdo is the champion';
